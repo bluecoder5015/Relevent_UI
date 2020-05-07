@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_green"
+    android:gravity="center"
+    tools:context=".Fragments.HomeFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:text="Enter details to add Events"
+        android:paddingBottom="50dp"/>
+
+    <!-- Events detais-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+
+        android:text="Enter Event Name"/>
+
+    <EditText
+        android:id="@+id/event_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_shape"
+        android:hint="Event name with details"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        android:text="Enter Organisation Detail"/>
+
+    <EditText
+        android:id="@+id/org_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_shape"
+        android:hint="organising intitute/college/scool"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        android:text="Enter Venue Details"/>
+
+    <EditText
+        android:id="@+id/venue_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_shape"
+        android:hint="Locate venue address"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        android:text="Enter timings"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/input_shape"
+            android:layout_marginTop="8dp"
+            android:hint="dd/mm/yyyy"
+            android:inputType="date" />
+
+        <ImageButton
+            android:id="@+id/open_calender"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_date_picker"
+            android:background="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_marginTop="25dp"
+        />
+
+
+
+</LinearLayout>
